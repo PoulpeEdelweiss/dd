@@ -1,15 +1,22 @@
+
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: ['./src/**/*.{md,astro,vue,js}'],
 	theme: {
 		screens: {
-			sm: '640px',
-			md: '768px',
-			lg: '1024px',
-			xl: '1280px',
-			'2xl': '1536px',
+			'sm': '576px',
+			'md': '960px',
+      		'lg': '1440px',
+      
+			
 		  },
 		extend: {
+				fontFamily: {
+					body: ['', ...defaultTheme.fontFamily.sans]
+				},
 			fontSize: {
 				sm: ['14px', '20px'],
 				base: ['16px', '24px'],
