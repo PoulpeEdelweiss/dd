@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Header from '../components/Header/Header.vue';
 ---
 
 <!doctype html>
@@ -16,7 +17,8 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="grid grid-in-main">
+		<Header/>
 		<slot />
 	</body>
 </html>

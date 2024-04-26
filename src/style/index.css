@@ -1,0 +1,13 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	.no-scrollbar {
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			@apply hidden;
+		}
+	}
+}
