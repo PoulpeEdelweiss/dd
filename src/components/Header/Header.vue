@@ -2,9 +2,9 @@
 
 <template>
     <header class="transition-all duration-300">
-    <div class="w-full bg-[#F9F9F9] py-[25px] lg:px-[150px]">
-      <ul class=" mx-auto grid lg:grid-cols-8">
-        <li class="w-[76px] h-[50px] lg:col-start-1 ">
+    <div class="w-full mx-auto bg-[#F9F9F9] py-[17px] lg:py-[25px] lg:px-[150px]">
+      <ul class="flex items-center justify-between px-[8px] mx-auto lg:grid grid-cols-8 lg:px-[0]">
+        <li class=" w-[76px] h-[50px] lg:col-start-1 lg:w-[100px] lg:h-[60px]">
           <img src="icons/logo.svg" alt="logo">
         </li>
         <li class="col-end-6 py-[20px] lg:col-start-2">
@@ -24,27 +24,23 @@
           </nav>
         </li>
         <li class="col-start-7 hidden max-w-max lg:block">
-          <div class="relative w-[50px] rounded-full bg-[#D1D1D1] lg:h-[50px]">
-            <img class="absolute left-2 top-3" width="31" height="31" src="icons/search.svg" alt="">
+          <div class="flex items-center justify-center w-[50px] rounded-full bg-[#D1D1D1] h-[50px]">
+            <img class="" width="31" height="31" src="icons/search.svg" alt="">
             
           </div>
         </li>
-        <li class="col-start-8 hidden max-w-max lg:block">зарегестрироваться</li>
+        <li class="hidden lg:block max-w-max col-start-8">
+            
+            <button class="px-[27px] py-[15px] rounded-[10px] border-solid bg-[#00C073] text-[#FFFFFF] text-base">Зарегестрироваться</button>
+        </li>
+        
+        
       </ul>
     </div>
   </header>
 
 </template>
 
-<script>
+<script setup>
 </script>
 
-<style>
-    input::-ms-clear{display: none;}
-    button{cursor: pointer;}
-    button::-moz-focus-inner{padding:0; border:0;}
-    a, a:visited{text-decoration:none}
-    ul li{list-style: none;}
-    img{vertical-align: top;}
-
-</style>
