@@ -14,9 +14,10 @@ export default {
 			
 		  },
 		extend: {
-				fontFamily: {
-					body: ['', ...defaultTheme.fontFamily.sans]
-				},
+			fontFamily: {
+				body: ['Montserrat', ...defaultTheme.fontFamily.sans],
+				"second": ['Monoton', ...defaultTheme.fontFamily.sans]
+			},
 			fontSize: {
 				sm: ['14px', '20px'],
 				base: ['16px', '24px'],
