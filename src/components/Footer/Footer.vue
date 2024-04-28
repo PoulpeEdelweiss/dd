@@ -1,5 +1,5 @@
 <template>
-    <footer class="grid pl-[9px] py-[30px] bg-[#004978] h-[268px] text-sm leading-[17px] text-[#F9F9F9]">
+    <footer class="grid pl-[9px] py-[30px] bg-[#004978] h-[268px] text-Regular-menu leading-[17px] text-[#F9F9F9]">
         <ul>
             <li>
                 <p>© 2023 ДОННТУ</p>

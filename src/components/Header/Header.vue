@@ -8,7 +8,7 @@
           <img src="icons/logo.svg" alt="logo">
         </li>
         <li class="col-end-6 py-[20px] lg:col-start-2">
-          <nav class="flex justify-between  text-base text-[FFFFFF] transition-all duration-300 lg:block">
+          <nav class="flex justify-between text-Regular-menu text-[FFFFFF] transition-all duration-300 lg:block">
             <div class="flex h-[17px] w-[50px] flex-col justify-between lg:hidden">
               <p class="block rounded h-[3px] bg-black"></p>
               <p class="block rounded h-[3px] bg-black"></p>
@@ -31,7 +31,7 @@
         </li>
         <li class="hidden lg:block max-w-max col-start-8">
             
-            <button class="px-[27px] py-[15px] rounded-[10px] border-solid bg-[#00C073] text-[#FFFFFF] text-base">Зарегестрироваться</button>
+            <button class="text-SemiBold-button px-[27px] py-[15px] rounded-[10px] border-solid bg-[#00C073] text-[#FFFFFF] text-base">Зарегестрироваться</button>
         </li>
         
         
