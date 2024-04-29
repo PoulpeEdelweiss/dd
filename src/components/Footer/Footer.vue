@@ -1,6 +1,6 @@
 <template>
     <footer class="px-[9px] py-[30px] bg-[#004978] h-[268px] text-[rgb(249,249,249)] lg:h-[144px] lg:px-[150px]">
-        <ul class="grid text-Regular-menu lg:grid-cols-f1a lg:gap-[150px]">
+        <ul class="grid text-Light-h4-mob lg:text-Regular-menu lg:grid-cols-f1a lg:gap-[150px]">
             <li>
                 <p>© 2023 ДОННТУ</p>
             </li>
