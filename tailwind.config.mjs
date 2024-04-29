@@ -63,8 +63,20 @@ export default {
 					lineHeight: '17px',
 					fontWeight: '300',
 				}],
-
 			  },
+			  gridTemplateColumns: {
+				'aa1': 'repeat(2, auto) 1fr',
+				'a1': 'auto 1fr',
+				'1a': '1fr auto',
+				'1a1': '1fr auto 1fr',
+				'a11': 'auto 1fr 1fr',
+				'11a': '1fr 1fr auto',
+				'a1a': 'auto 1fr auto',
+				'1aa': '1fr repeat(2, auto)',
+				'a1aa': 'auto 1fr repeat(2, auto)',
+				'full': '100%',
+				'f1a': '500px 1fr auto',
+			},
 
 		},
 	},
