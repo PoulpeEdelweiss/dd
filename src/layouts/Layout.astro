@@ -5,6 +5,9 @@ interface Props {
 
 const { title } = Astro.props;
 import Header from '../components/Header/Header.vue';
+import Concept from '../components/Concept/Concept.vue';
+import CardReason from '../components/CardReason/CardReason.vue';
+import CardType from '../components/CardType/CardType.vue';
 import Footer from '../components/Footer/Footer.vue';
 ---
 
@@ -20,7 +23,10 @@ import Footer from '../components/Footer/Footer.vue';
 	</head>
 	<body class="grid grid-in-main">
 		<Header/>
-		<slot />
+		<Concept/>
+		<CardReason/>
+		<CardType/>
+		<!-- <slot /> -->
 		<Footer/>
 	</body>
 </html>
