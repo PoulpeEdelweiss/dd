@@ -4,8 +4,8 @@
         <ul class="flex flex-col justify-center gap-[21px] lg:gap-[25px] mx-auto">
             <li class="flex flex-col lg:h-[366px] flex-wrap justify-center lg:gap-[20px]">
                 <img class="w-[222px] mx-auto pb-[10px] lg:w-[366px] lg:text-left" src="images/boy_pic.png" alt="boy">
-                <h3 class="text-center text-Regular-h3-mob pb-[8px] lg:text-left lg:text-Regular-h3-desc">Юный программист</h3>
-                <p class=" text-justify text-clip overflow-hidden text-Light-h4-mob pb-[12px] lg:text-Light-h4-desc">Учащиеся старших классов общеобразовательных организаций <br> специального профессионального образования </p>
+                <h3 class="text-center text-Regular-h3-mob pb-[8px] lg:text-left lg:text-Regular-h3-desc ">Юный программист</h3>
+                <p class=" text-Light-h4-mob pb-[12px] lg:text-Light-h4-desc lg:text-left">Учащиеся старших классов общеобразовательных организаций <br> специального профессионального образования </p>
                 <button class="self-center lg:self-start w-[231px] h-[50px] max-w-max text-SemiBold-button px-[27px] py-[15px] rounded-[10px] border-solid bg-[#0070B8] text-[#FFFFFF]">Узнать подробности</button>
                 
             </li>
