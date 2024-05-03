@@ -5,7 +5,9 @@
     <div class="w-full mx-auto bg-[#F9F9F9] py-[17px] lg:py-[25px] lg:px-[150px]">
       <ul class="flex items-center justify-between px-[9px] mx-auto lg:grid grid-cols-8 lg:px-[0]">
         <li class=" lg:col-start-1">
-          <Icon name="logo" size="lg ? 'w-[100px] h-[60px]' : 'w-[76px] h-[50px]'" />
+          <Icon 
+            name="logo"
+            :size="lg ? 'w-[100px] h-[60px]' : 'w-[76px] h-[51px]'" />
         </li>
         <li class="col-end-6 py-[20px] lg:col-start-2">
           <nav class="flex justify-between text-Regular-menu text-[FFFFFF] transition-all duration-300 lg:block">
@@ -25,8 +27,10 @@
         </li>
         <li class="col-start-7 hidden max-w-max lg:block">
           <div class="flex items-center justify-center w-[50px] rounded-full bg-[#D1D1D1] h-[50px]">
-            <!-- <img class="" width="31" height="31" src="icons/search.svg" alt=""> -->
-            <Icon name="search" size="lg ? 'h-[31px]' : ' h-[21px]'" />
+            <img class="" width="31" height="31" src="icons/search.svg" alt="">
+            <!-- <Icon 
+              name="search2" 
+              size="h-[31px] w-[31px]" /> -->
           </div>
         </li>
         <li class="hidden lg:block max-w-max col-start-8">
@@ -43,5 +47,7 @@
 
 <script setup>
   import Icon from "@components/Icon/Icon.vue";
+  import useMedia from '@tools/media'
+  const { lg } = useMedia()
 </script>
 
