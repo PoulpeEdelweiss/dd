@@ -1,5 +1,3 @@
-
-
 <template>
     <header class="transition-all duration-300">
     <div class="w-full mx-auto bg-[#F9F9F9] py-[17px] lg:py-[25px] lg:px-[150px]">
@@ -17,11 +15,13 @@
               <p class="block rounded h-[3px] bg-black"></p>
             </div>
             <ul class="mx-auto hidden max-w-max gap-x-8 text-base lg:flex">
-              <li>Об олимпиаде</li>
-              <li>Документы</li>
-              <li>Сертификаты</li>
-              <li>Результаты</li>
-              <li>Контакты</li>
+              <li v-for="item in menuList" :key="item">
+                <a 
+                  :href="item.link"
+                  class="">
+                    <span>{{ item.title }}</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </li>
@@ -29,7 +29,7 @@
           <div class="flex items-center justify-center w-[50px] rounded-full bg-[#D1D1D1] h-[50px]">
             <img class="" width="31" height="31" src="icons/search.svg" alt="">
             <!-- <Icon 
-              name="search2" 
+              name="search" 
               size="h-[31px] w-[31px]" /> -->
           </div>
         </li>
@@ -49,5 +49,27 @@
   import Icon from "@components/Icon/Icon.vue";
   import useMedia from '@tools/media'
   const { lg } = useMedia()
+  const menuList = [
+    {
+        title: "Об олимпиаде",
+        link: "/about/",
+    },
+    {
+        title: "Документы",
+        link: "/documents/",
+    },
+    {
+        title: "Сертификаты",
+        link: "/cert/",
+    },
+    {
+        title: "Результаты",
+        link: "/results/",
+    },
+    {
+        title: "Контакты",
+        link: "/contacts/",
+    },
+  ];
 </script>
 
