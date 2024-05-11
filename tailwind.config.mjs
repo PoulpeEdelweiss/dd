@@ -76,6 +76,7 @@ export default {
 				'a1aa': 'auto 1fr repeat(2, auto)',
 				'full': '100%',
 				'f1a': '500px 1fr auto',
+				'11': 'repeat(2,auto)',
 			},
 
 		},
