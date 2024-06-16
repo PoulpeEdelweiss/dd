@@ -39,6 +39,7 @@ export default {
 					lineHeight: '19px',
 					fontWeight: '200',
 				}],
+				
 				'Regular-menu': ['16px', {
 					lineHeight: '19px',
 					fontWeight: '400',
@@ -77,6 +78,8 @@ export default {
 				'full': '100%',
 				'f1a': '500px 1fr auto',
 				'11': 'repeat(2,auto)',
+				'41': '4fr 1fr',
+				
 			},
 
 		},
