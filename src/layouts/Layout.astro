@@ -1,31 +1,36 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
 import Header from '../components/Header/Header.vue';
 import Footer from '../components/Footer/Footer.vue';
+const { title, description } = Astro.props;
+const preview = '/icons/logo.svg';
 ---
-
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description}>
+		<link rel="icon" type="image/svg+xml" href={preview} />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{title}</title>	
 	</head>
-	<body id="wrapper" class="">
-		<Header/>
-		<main class="grid grid-in-main wrapper">
+	
+	<body id="wrapper" >	
+			<Header client:load/>
+			<main id="content" class="grid wrapper">
+				<slot />
+			</main>
+			<Footer/>	
+	</body>
+	<!-- <body id="wrapper" >	
+		<Header client:load/>
+		<main id="content" class="min-h-[calc(100%-110px)] mb-[144px] wrapper">
 			<slot />
 		</main>
-		
-		<Footer/>
-	</body>
+		<Footer/>	
+	</body> -->
+	
 </html>
 <style is:global>
 	:root {
