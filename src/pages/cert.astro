@@ -1,7 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Certificate from '../components/Certificate/Certificate.vue';
+
+const categoryTitle = 'Выбрать номинацию'
+
+const categoryList=[
+    { 
+        id:1,
+        category: 'Программирование',
+    },
+    {
+        id:2,
+        category: 'IT',
+    }
+]
+
 ---
 
 <Layout title="Сертификаты">
- <h1>Сертификаты</h1>
+    <Certificate
+        categoryTitle={categoryTitle}
+        categoryList={categoryList}
+    />
 </Layout>

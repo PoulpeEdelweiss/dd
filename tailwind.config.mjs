@@ -78,7 +78,7 @@ export default {
 				'full': '100%',
 				'f1a': '500px 1fr auto',
 				'11': 'repeat(2,auto)',
-				'41': '4fr 1fr',
+				'amm': 'repeat(auto-fit, minmax(173px,1fr))',
 				
 			},
 
